@@ -52,6 +52,38 @@ A complete collection of open-source AI video generation tools for creating prof
 - **Repository:** https://github.com/guoyww/AnimateDiff
 - **VRAM Required:** Lower VRAM friendly
 
+### 7. **Open-Sora**
+- **Type:** Text-to-video (Sora-like)
+- **Best For:** Research, reproducibility, full training pipelines
+- **Features:** Open-source training code, flexible architecture
+- **Quality:** Educational and research purposes
+- **Repository:** https://github.com/HPC-AI-Open/Open-Sora
+- **VRAM Required:** 40GB+
+
+### 8. **Stable Video Diffusion (SVD)**
+- **Type:** Image-to-video
+- **Best For:** Versatile video generation
+- **Features:** Works with Stability AI models, community plugins
+- **Quality:** Good all-purpose video generation
+- **Repository:** https://huggingface.co/stabilityai/stable-video-diffusion
+- **VRAM Required:** 8GB+
+
+### 9. **VideoCrafter**
+- **Type:** Text-to-video
+- **Best For:** Diverse style generation
+- **Features:** Multiple diffusion models, flexible
+- **Quality:** Various artistic styles
+- **Repository:** https://github.com/AILab-CVC/VideoCrafter
+- **VRAM Required:** 12GB+
+
+### 10. **ModelScope T2V**
+- **Type:** Text-to-video
+- **Best For:** Fast generation with good quality
+- **Features:** Optimized for inference, pre-trained models
+- **Quality:** Balanced quality and speed
+- **Repository:** https://github.com/damo-vilab/modelscope
+- **VRAM Required:** 10GB+
+
 ---
 
 ## 📋 Quick Comparison
@@ -64,6 +96,10 @@ A complete collection of open-source AI video generation tools for creating prof
 | Mochi 1 | Medium | ⭐⭐⭐⭐ | Varies | Custom pipelines |
 | CogVideoX | Medium | ⭐⭐⭐ | Varies | Image animation |
 | AnimateDiff | Fast | ⭐⭐⭐ | Low | Budget GPUs |
+| Open-Sora | Slow | ⭐⭐⭐⭐ | 40GB+ | Research/Training |
+| Stable Video Diffusion | Medium | ⭐⭐⭐⭐ | 8GB+ | All-purpose |
+| VideoCrafter | Medium | ⭐⭐⭐⭐ | 12GB+ | Artistic styles |
+| ModelScope T2V | Medium | ⭐⭐⭐⭐ | 10GB+ | Balanced |
 
 ---
 
@@ -158,6 +194,56 @@ pip install -r requirements.txt
 python animate.py --image input.jpg --motion "smooth camera pan"
 ```
 
+#### Option 7: Open-Sora (Research)
+```bash
+# Clone the repository
+git clone https://github.com/HPC-AI-Open/Open-Sora
+cd Open-Sora
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Follow repo for training and inference
+```
+
+#### Option 8: Stable Video Diffusion
+```bash
+# Clone or use Hugging Face
+git clone https://huggingface.co/stabilityai/stable-video-diffusion
+
+# Install dependencies
+pip install diffusers transformers torch
+
+# Generate video from image
+python -c "from diffusers import StableVideoDiffusionPipeline; ..."
+```
+
+#### Option 9: VideoCrafter
+```bash
+# Clone the repository
+git clone https://github.com/AILab-CVC/VideoCrafter
+cd VideoCrafter
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Generate video
+python scripts/inference.py --prompt "Your prompt"
+```
+
+#### Option 10: ModelScope T2V
+```bash
+# Clone the repository
+git clone https://github.com/damo-vilab/modelscope
+cd modelscope
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Generate video
+python infer.py --prompt "Your prompt"
+```
+
 ---
 
 ## 💡 Usage Guide
@@ -213,8 +299,10 @@ Each tool supports batch generation. Check individual repositories for batch pro
 | Highest quality | Wan 2.2 or HunyuanVideo | Best visual quality |
 | Low VRAM (8GB) | LTX-Video or AnimateDiff | Optimized for limited resources |
 | Image animation | CogVideoX or AnimateDiff | Specialized for images |
-| Custom training | Mochi 1 | Best fine-tuning support |
+| Custom training | Mochi 1 or Open-Sora | Best fine-tuning support |
 | Professional use | Wan 2.2 | Commercial-safe license |
+| Research | Open-Sora | Full training pipelines |
+| Balanced approach | ModelScope T2V or VideoCrafter | Good quality/speed balance |
 
 ---
 
@@ -223,6 +311,8 @@ Each tool supports batch generation. Check individual repositories for batch pro
 - **Hugging Face Models:** https://huggingface.co
 - **Awesome AI Video Generation:** https://github.com/augstai/awesome-ai-video-generation
 - **CUDA Setup Guide:** https://pytorch.org/get-started/locally/
+- **PyTorch:** https://pytorch.org
+- **Transformers:** https://huggingface.co/transformers/
 
 ---
 
@@ -293,6 +383,15 @@ Each tool has its own license. Most are open-source (Apache-2.0, MIT, etc.). Che
 4. **Generate your first video!**
 
 For detailed instructions and troubleshooting, visit each tool's GitHub repository.
+
+---
+
+## 📚 Documentation Guide
+
+- **SETUP_GUIDE.md** - Complete system setup and cloud GPU instructions
+- **INSTALLATION.md** - Step-by-step installation checklist
+- **USAGE_EXAMPLES.md** - Prompt engineering tips and examples
+- **COMPARISON.md** - Detailed tool comparison and recommendations
 
 ---
 
