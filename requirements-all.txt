@@ -1,0 +1,38 @@
+# Requirements for additional features
+
+# Web App (Flask)
+flask==2.3.3
+flask-cors==4.0.0
+
+# Desktop App (PyQt5)
+PyQt5==5.15.9
+PyQt5-sip==12.13.0
+
+# Batch Processing & Effects
+opencv-python==4.8.1.78
+Pillow==10.0.1
+ffmpeg-python==0.2.1
+
+# AI Models
+torch==2.1.1
+torchvision==0.16.1
+transformers==4.35.0
+diffusers==0.21.4
+acccelerate==0.24.1
+
+# Mobile API & Database
+flask-cors==4.0.0
+flask-sqlalchemy==3.0.5
+flask-jwt-extended==4.5.2
+
+# Utilities
+Pillow==10.0.1
+numpy==1.24.3
+requests==2.31.0
+python-dotenv==1.0.0
+click==8.1.7
+tqdm==4.66.1
+
+# Database (optional)
+psycopg2-binary==2.9.9  # PostgreSQL
+redis==5.0.0  # Redis for job queue

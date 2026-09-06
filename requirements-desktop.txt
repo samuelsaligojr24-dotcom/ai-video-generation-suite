@@ -1,0 +1,18 @@
+# Desktop App Requirements
+# Minimal setup for desktop application
+
+# GUI Framework
+PyQt5==5.15.9
+PyQt5-sip==12.13.0
+
+# Video Processing
+opencv-python==4.8.1.78
+Pillow==10.0.1
+
+# AI/ML Framework
+torch==2.1.1
+transformers==4.35.0
+
+# Utilities
+numpy==1.24.3
+python-dotenv==1.0.0
